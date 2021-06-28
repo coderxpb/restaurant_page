@@ -1,3 +1,5 @@
-import homebg from './home-bg.jpg'
+import homePage from './homepg.js'
 
+let mainContainer = document.getElementById("content");
 console.log("wassup");
+homePage(mainContainer);

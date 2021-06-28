@@ -12,6 +12,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				exclude: /node_modules/,
 				type: 'asset/resource',
 				generator: {
 					filename: 'images/[hash][ext][query]'
