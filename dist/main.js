@@ -16,9 +16,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const homePage = (mainContainer) => {
+	mainContainer.style.height = "100vh";
 	const bgImg = document.createElement("img");
+	bgImg.id = "homeImg";
 	bgImg.src = _imgs_home_bg_jpg__WEBPACK_IMPORTED_MODULE_0__;
-	bgImg.style = "height: 100vh"
+	bgImg.style = "height: 100vh; width: 100vw;object-fit: cover;"
 	mainContainer.appendChild(bgImg);
 }
 
@@ -134,8 +136,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _homepg_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepg.js */ "./src/homepg.js");
 
 
-let mainContainer = document.getElementById("content");
-console.log("wassup");
+const mainContainer = document.getElementById("content");
+const menuDiv = document.createElement("div");
+menuDiv.style = "position: absolute; top:5px; right: 5px; display: flex; gap: 10px;"
+
+const homeBtn = document.createElement("button");
+homeBtn.textContent = "home";
+const rmenuBtn = document.createElement("button");
+const contactBtn = document.createElement("button");
+const menuButtons = [homeBtn, rmenuBtn, contactBtn];
+
+menuButtons.forEach((item,index)=>{
+	menuDiv.appendChild(item);
+	item.classList.add("menu-button");
+})
+
+
+mainContainer.appendChild(menuDiv);
 (0,_homepg_js__WEBPACK_IMPORTED_MODULE_0__.default)(mainContainer);
 
 })();

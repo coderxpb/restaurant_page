@@ -3,6 +3,7 @@ const mode =  process.env.NODE_ENV === 'production'?'production':'development'
 
 module.exports = {
 	mode: mode,
+	target: 'web',
 	entry: './src/index.js',
 	output: {
 		filename: 'main.js',
@@ -23,6 +24,7 @@ module.exports = {
 
 	devtool: 'source-map',
 	devServer:{
-		contentBase: './dist'
+		contentBase: './dist',
+		watchContentBase: true
 	}
 }
