@@ -4,10 +4,29 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	border: none;
 	background-color: transparent;
 	text-decoration: underline;
-	font-size: 2rem;
+	font-size: 2.4rem;
+	font-weight: 500;
+	text-shadow: 0 -1px 4px black;
 	color:rgb(255, 255, 255);
+	align-self: flex-end;
 }
 
 .menu-button:hover{
+	color:rgb(240, 240, 240);
 	cursor: pointer ;
+}
+#menuDiv{
+	position: absolute; top:5px; right: 5px; display: flex;gap: 10px;
+}
+
+@media screen and (max-width: 400px) {
+	#menuDiv{
+		flex-direction: column;
+		gap: 5px;
+	}
+	.menu-button{
+		font-size: 2rem;
+		color:rgb(245, 245, 245);
+	}
+	
 }

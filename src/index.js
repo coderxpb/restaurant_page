@@ -2,7 +2,8 @@ import homePage from './homepg.js'
 
 const mainContainer = document.getElementById("content");
 const menuDiv = document.createElement("div");
-menuDiv.style = "position: absolute; top:5px; right: 5px; display: flex; gap: 10px;"
+menuDiv.id = "menuDiv";
+
 
 const homeBtn = document.createElement("button");
 homeBtn.textContent = "home";
