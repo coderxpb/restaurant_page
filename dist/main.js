@@ -2,6 +2,44 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _imgs_contact_bg_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./imgs/contact-bg.jpg */ "./src/imgs/contact-bg.jpg");
+
+
+const contactPage = (mainContainer) => {
+	mainContainer.style.height = "100vh";
+
+	const bgImg = document.createElement("img");
+	bgImg.classList = "bgimgs";
+	bgImg.id = "contact-img";
+	bgImg.src = _imgs_contact_bg_jpg__WEBPACK_IMPORTED_MODULE_0__;
+
+	mainContainer.appendChild(bgImg);
+
+	const formC = document.createElement("form");
+	formC.id = "con-form";
+	
+	const subjF = document.createElement("input")
+	subjF.setAttribute("type","text");
+
+	formC.appendChild(subjF);
+	mainContainer.appendChild(formC);
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contactPage);
+
+/***/ }),
+
 /***/ "./src/homepg.js":
 /*!***********************!*\
   !*** ./src/homepg.js ***!
@@ -18,6 +56,7 @@ __webpack_require__.r(__webpack_exports__);
 const homePage = (mainContainer) => {
 	mainContainer.style.height = "100vh";
 	const bgImg = document.createElement("img");
+	bgImg.classList = "bgimgs"
 	bgImg.id = "home-img";
 	bgImg.src = _imgs_home_bg_jpg__WEBPACK_IMPORTED_MODULE_0__;
 
@@ -30,15 +69,29 @@ const homePage = (mainContainer) => {
 	hmp1.textContent = "only";
 
 	const hmp2 = document.createElement("p");
-	hmp1.textContent = "the";
+	hmp2.textContent = "the";
 
 	const hmp3 = document.createElement("p");
-	hmp1.textContent = "best.";
+	hmp3.textContent = "best.";
+
 	hmTxt.appendChild(hmp1);
+	hmTxt.appendChild(hmp2);
+	hmTxt.appendChild(hmp3);
+
 	mainContainer.appendChild(hmTxt);
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homePage);
+
+/***/ }),
+
+/***/ "./src/imgs/contact-bg.jpg":
+/*!*********************************!*\
+  !*** ./src/imgs/contact-bg.jpg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/726ced0a84ccb5804bf8.jpg";
 
 /***/ }),
 
@@ -148,6 +201,8 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _homepg_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepg.js */ "./src/homepg.js");
+/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact.js */ "./src/contact.js");
+
 
 
 const mainContainer = document.getElementById("content");
@@ -172,7 +227,7 @@ menuButtons.forEach((item,index)=>{
 })
 
 mainContainer.appendChild(menuDiv);
-(0,_homepg_js__WEBPACK_IMPORTED_MODULE_0__.default)(mainContainer);
+(0,_contact_js__WEBPACK_IMPORTED_MODULE_1__.default)(mainContainer);
 
 
 

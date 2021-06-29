@@ -1,4 +1,5 @@
 import homePage from './homepg.js'
+import contactPage from './contact.js';
 
 const mainContainer = document.getElementById("content");
 const menuDiv = document.createElement("div");
@@ -16,6 +17,7 @@ contactBtn.textContent = "contact"
 
 const menuButtons = [homeBtn, rmenuBtn, contactBtn];
 
+
 menuButtons.forEach((item,index)=>{
 	menuDiv.appendChild(item);
 	item.classList.add("menu-button");
@@ -23,5 +25,6 @@ menuButtons.forEach((item,index)=>{
 
 mainContainer.appendChild(menuDiv);
 homePage(mainContainer);
+
 
 

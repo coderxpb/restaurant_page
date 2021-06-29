@@ -3,6 +3,7 @@ import homebg from './imgs/home-bg.jpg'
 const homePage = (mainContainer) => {
 	mainContainer.style.height = "100vh";
 	const bgImg = document.createElement("img");
+	bgImg.classList = "bgimgs"
 	bgImg.id = "home-img";
 	bgImg.src = homebg;
 
