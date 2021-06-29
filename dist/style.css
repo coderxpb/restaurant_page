@@ -9,12 +9,15 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	text-shadow: 0 -1px 4px black;
 	color:rgb(255, 255, 255);
 	align-self: flex-end;
+	z-index: 1;
 }
 
 .menu-button:hover{
 	color:rgb(240, 240, 240);
 	cursor: pointer ;
+	z-index: 1;
 }
+
 #menuDiv{
 	position: absolute;
 	top:5px; right: 5px; display: flex;gap: 10px;
@@ -39,7 +42,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	height: 100vh;
 	color: rgb(225, 252, 249);
 	text-shadow: 2px 2px 2px rgb(138, 138, 138);
-	z-index: 2;
 	font-size: 7rem;
 	box-sizing: border-box;
 
@@ -70,4 +72,32 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .con-field{
 	width: 600px;
 	align-self: center;
+}
+
+.con-btn{
+		align-self: center;
+		height: 4%;
+		width: 200px;
+	}
+
+@media screen and (max-width: 620px) {
+	#con-form{
+		box-sizing: border-box;
+		position: relative; 
+		display:flex; 
+		flex-direction: column; 
+		height: 100vh;
+		justify-content: center;
+		gap: 10px;
+	}
+
+.con-field{
+		width: 90%;
+		align-self: center;
+	}
+
+	.con-btn{
+		width: 160px;
+	}
+	
 }

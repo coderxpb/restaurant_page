@@ -29,9 +29,23 @@ const contactPage = (mainContainer) => {
 	formC.id = "con-form";
 	
 	const subjF = document.createElement("input")
+	subjF.style = "height: 5%; "
 	subjF.setAttribute("type","text");
+	subjF.classList = "con-field";
+
+	const mesF = document.createElement("input")
+	mesF.style = "height: 55%; "
+	mesF.setAttribute("type", "text");
+	mesF.classList = "con-field";
+
+	const subBtn = document.createElement("button")
+	subBtn.style = "height: 5%; width: 200px;"
+	
+	subBtn.classList = "con-field";
 
 	formC.appendChild(subjF);
+	formC.appendChild(mesF);
+	formC.appendChild(subBtn);
 	mainContainer.appendChild(formC);
 
 }
@@ -221,13 +235,30 @@ contactBtn.textContent = "contact"
 
 const menuButtons = [homeBtn, rmenuBtn, contactBtn];
 
+homeBtn.addEventListener('click', (e)=>{
+	clearPage();
+	(0,_homepg_js__WEBPACK_IMPORTED_MODULE_0__.default)(mainContainer);
+})
+
+const clearPage = () =>{
+	while(mainContainer.firstChild){
+		if(mainContainer.firstChild.id == "menuDiv"){
+			break;
+		}
+		else{
+			mainContainer.removeChild(mainContainer.firstChild);
+		}
+	}
+}
+
 menuButtons.forEach((item,index)=>{
 	menuDiv.appendChild(item);
 	item.classList.add("menu-button");
 })
 
 mainContainer.appendChild(menuDiv);
-(0,_contact_js__WEBPACK_IMPORTED_MODULE_1__.default)(mainContainer);
+(0,_homepg_js__WEBPACK_IMPORTED_MODULE_0__.default)(mainContainer);
+
 
 
 

@@ -24,9 +24,8 @@ const contactPage = (mainContainer) => {
 	mesF.classList = "con-field";
 
 	const subBtn = document.createElement("button")
-	subBtn.style = "height: 5%; width: 200px;"
 	
-	subBtn.classList = "con-field";
+	subBtn.classList = "con-btn";
 
 	formC.appendChild(subjF);
 	formC.appendChild(mesF);

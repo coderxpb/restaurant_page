@@ -18,13 +18,34 @@ contactBtn.textContent = "contact"
 const menuButtons = [homeBtn, rmenuBtn, contactBtn];
 
 
+homeBtn.addEventListener('click', (e)=>{
+	clearPage();
+	mainContainer.appendChild(menuDiv);
+	homePage(mainContainer);
+
+})
+
+
+contactBtn.addEventListener('click', (e) => {
+	clearPage();
+	mainContainer.appendChild(menuDiv);
+	contactPage(mainContainer);
+
+})
+
+const clearPage = () =>{
+	while(mainContainer.lastChild){
+		mainContainer.removeChild(mainContainer.firstChild);
+	}
+}
+
 menuButtons.forEach((item,index)=>{
 	menuDiv.appendChild(item);
 	item.classList.add("menu-button");
 })
 
 mainContainer.appendChild(menuDiv);
-homePage(mainContainer);
+contactPage(mainContainer);
 
 
 
