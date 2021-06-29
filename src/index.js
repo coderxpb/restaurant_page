@@ -21,6 +21,7 @@ menuButtons.forEach((item,index)=>{
 	item.classList.add("menu-button");
 })
 
-
 mainContainer.appendChild(menuDiv);
 homePage(mainContainer);
+
+

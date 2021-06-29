@@ -18,10 +18,24 @@ __webpack_require__.r(__webpack_exports__);
 const homePage = (mainContainer) => {
 	mainContainer.style.height = "100vh";
 	const bgImg = document.createElement("img");
-	bgImg.id = "homeImg";
+	bgImg.id = "home-img";
 	bgImg.src = _imgs_home_bg_jpg__WEBPACK_IMPORTED_MODULE_0__;
-	bgImg.style = "height: 100vh; width: 100vw;object-fit: cover;"
+
 	mainContainer.appendChild(bgImg);
+  let linebreak = document.createElement("br");
+	const hmTxt = document.createElement("div");
+	hmTxt.id = "home-text";
+
+	const hmp1 = document.createElement("p");
+	hmp1.textContent = "only";
+
+	const hmp2 = document.createElement("p");
+	hmp1.textContent = "the";
+
+	const hmp3 = document.createElement("p");
+	hmp1.textContent = "best.";
+	hmTxt.appendChild(hmp1);
+	mainContainer.appendChild(hmTxt);
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homePage);
@@ -157,9 +171,10 @@ menuButtons.forEach((item,index)=>{
 	item.classList.add("menu-button");
 })
 
-
 mainContainer.appendChild(menuDiv);
 (0,_homepg_js__WEBPACK_IMPORTED_MODULE_0__.default)(mainContainer);
+
+
 
 })();
 
