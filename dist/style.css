@@ -1,6 +1,8 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
+
 .menu-button{
+	box-sizing: border-box;
 	border: none;
 	background-color: transparent;
 	text-decoration: underline;
@@ -25,9 +27,18 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 .bgimgs{
+	box-sizing: border-box;
 	position: absolute;
-	height: 100vh; 
+	height: 100vh;
 	width: 100vw;
+	object-fit: cover;
+}
+
+.menubg{
+	box-sizing: border-box;
+	position: absolute;
+	height: 220vh;
+	width: 100%;
 	object-fit: cover;
 }
 
@@ -101,3 +112,63 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	}
 	
 }
+
+#main-menu{
+	box-sizing: border-box;
+	position: relative;
+	top: 140px;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.menu-itemnorev{
+	box-sizing: border-box;
+	position: relative;
+	height: 30vh;
+	z-index: 1;
+	display: flex;
+	justify-content: space-evenly;
+	width: 90vw;
+	background-color: rgba(165, 235, 235, 0.562);
+	align-self: flex-end;
+	justify-content: space-between;
+}
+
+.menu-itemrev{
+	box-sizing: border-box;
+	position: relative;
+	z-index: 1;
+	height: 30vh;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+	width: 90vw;
+	background-color: rgba(165, 235, 235, 0.562);
+	align-self: flex-start;
+	justify-content: space-between;
+}
+
+.menu-item-img{
+	box-sizing: border-box;
+	width: 70%;
+	object-fit: cover;
+}
+
+.menu-item-text{
+	box-sizing: border-box;
+	font-size: 2rem;
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+	text-align: end;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.menu-item-text:first-child{
+	box-sizing: border-box;
+	font-size: 5rem;
+}
+

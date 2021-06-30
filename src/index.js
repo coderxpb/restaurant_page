@@ -1,5 +1,6 @@
 import homePage from './homepg.js'
 import contactPage from './contact.js';
+import menuPage from './menu.js';
 
 const mainContainer = document.getElementById("content");
 const menuDiv = document.createElement("div");
@@ -45,7 +46,7 @@ menuButtons.forEach((item,index)=>{
 })
 
 mainContainer.appendChild(menuDiv);
-contactPage(mainContainer);
+menuPage(mainContainer);
 
 
 
