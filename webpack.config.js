@@ -20,18 +20,22 @@ module.exports = {
 					filename: 'images/[hash][ext][query]'
 				}
 			},
+			{
+				test: /\.css$/i,
+				use: ['style-loader', 'css-loader'],
+			}
 		],
 	},
-	plugins: [
-		new ImageMinimizerPlugin({
-			minimizerOptions: {
-				plugins: [
-					["mozjpeg", { progressive: true, quality: 70 }],
-				],
-			}
+	// plugins: [
+	// 	new ImageMinimizerPlugin({
+	// 		minimizerOptions: {
+	// 			plugins: [
+	// 				["mozjpeg", { progressive: true, quality: 70 }],
+	// 			],
+	// 		}
 			
-		})
-	],
+	// 	})
+	// ],
 
 	devtool: 'source-map',
 	devServer:{

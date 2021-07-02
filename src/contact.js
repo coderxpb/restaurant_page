@@ -1,14 +1,8 @@
-import contactBg from './imgs/contact-bg.jpg'
+
 
 const contactPage = (mainContainer) => {
-	mainContainer.style.height = "100vh";
-
-	const bgImg = document.createElement("img");
-	bgImg.classList = "bgimgs";
-	bgImg.id = "contact-img";
-	bgImg.src = contactBg;
-
-	mainContainer.appendChild(bgImg);
+	
+	mainContainer.style = "background-image: url('imgs/contact-bg.jpg');"
 
 	const formC = document.createElement("form");
 	formC.id = "con-form";

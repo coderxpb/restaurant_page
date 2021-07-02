@@ -1,9 +1,11 @@
 import homePage from './homepg.js'
 import contactPage from './contact.js';
 import menuPage from './menu.js';
+import './style.css';
 
 const mainContainer = document.getElementById("content");
 mainContainer.style.height = "100vh";
+mainContainer.id = "main-con";
 const menuDiv = document.createElement("div");
 menuDiv.id = "menuDiv";
 
@@ -18,6 +20,9 @@ contactBtn.textContent = "contact"
 
 const menuButtons = [homeBtn, rmenuBtn, contactBtn];
 
+function createClickButton(btnText,){
+
+}
 
 homeBtn.addEventListener('click', (e)=>{
 	clearPage();
