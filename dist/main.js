@@ -2,6 +2,46 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/imgs/contact-bg.jpg":
+/*!*********************************!*\
+  !*** ./src/imgs/contact-bg.jpg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/09971e72e6643135f10f.jpg";
+
+/***/ }),
+
+/***/ "./src/imgs/home-bg.jpg":
+/*!******************************!*\
+  !*** ./src/imgs/home-bg.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/e841c809d790f73e45f6.jpg";
+
+/***/ }),
+
+/***/ "./src/imgs/menu-bg2.jpg":
+/*!*******************************!*\
+  !*** ./src/imgs/menu-bg2.jpg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/f95fd063301602dcb7ce.jpg";
+
+/***/ }),
+
+/***/ "./src/imgs/pizza.jpg":
+/*!****************************!*\
+  !*** ./src/imgs/pizza.jpg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "images/d129431fcfe9eaf6b9b4.jpg";
+
+/***/ }),
+
 /***/ "./src/contact.js":
 /*!************************!*\
   !*** ./src/contact.js ***!
@@ -98,46 +138,6 @@ const homePage = (mainContainer) => {
 
 /***/ }),
 
-/***/ "./src/imgs/contact-bg.jpg":
-/*!*********************************!*\
-  !*** ./src/imgs/contact-bg.jpg ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "images/726ced0a84ccb5804bf8.jpg";
-
-/***/ }),
-
-/***/ "./src/imgs/home-bg.jpg":
-/*!******************************!*\
-  !*** ./src/imgs/home-bg.jpg ***!
-  \******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "images/91bd02b504ffe8d2ac39.jpg";
-
-/***/ }),
-
-/***/ "./src/imgs/menu-bg2.jpg":
-/*!*******************************!*\
-  !*** ./src/imgs/menu-bg2.jpg ***!
-  \*******************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "images/3b58d446fe3ab461d782.jpg";
-
-/***/ }),
-
-/***/ "./src/imgs/pizza.jpg":
-/*!****************************!*\
-  !*** ./src/imgs/pizza.jpg ***!
-  \****************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "images/4553143cf3ff775afb40.jpg";
-
-/***/ }),
-
 /***/ "./src/menu.js":
 /*!*********************!*\
   !*** ./src/menu.js ***!
@@ -154,16 +154,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const menuPage = (mainContainer) =>{
-	mainContainer.style.height = "100vh";
+	
 	const bgImg = document.createElement("img");
-	bgImg.classList = "bgimgs"
+	bgImg.classList = "menubg"
 	bgImg.id = "menu-img";
 	bgImg.src = _imgs_menu_bg2_jpg__WEBPACK_IMPORTED_MODULE_0__;
 
 	mainContainer.appendChild(bgImg);
-	const pizzaItem = createMenuItem("rev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza", "$9");
 
+	let mainMenuContainer = document.createElement("div");
+	const pizzaItem = createMenuItem("norev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza", "$9");
+	const pizzaItemRev = createMenuItem("rev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza2", "$92");
+	const pizzaItem2 = createMenuItem("norev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza", "$9");
+	const pizzaItemRev2 = createMenuItem("rev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza2", "$92");
+	const pizzaItem3 = createMenuItem("norev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza", "$9");
+	const pizzaItemRev3 = createMenuItem("rev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza2", "$92");
+	mainMenuContainer.id = "main-menu";
+	mainMenuContainer.appendChild(pizzaItem);
+	mainMenuContainer.appendChild(pizzaItemRev);
+	mainMenuContainer.appendChild(pizzaItem2);
+	mainMenuContainer.appendChild(pizzaItemRev2);
+	mainMenuContainer.appendChild(pizzaItem3);
+	mainMenuContainer.appendChild(pizzaItemRev3);
 
+	mainContainer.appendChild(mainMenuContainer);
 
 }
 
@@ -172,7 +186,7 @@ function createMenuItem(reversed, itemImg, itemName, itemPrice){
 	menuItemContainer.classList = "menu-item"+reversed;
 	let menuItemImg = document.createElement("img");
 	menuItemImg.src = itemImg;
-	menuItemImg.height = "200px";
+	menuItemImg.classList = "menu-item-img";
 	menuItemContainer.appendChild(menuItemImg);
 
 	let menuItemText = document.createElement("div");
@@ -183,7 +197,7 @@ function createMenuItem(reversed, itemImg, itemName, itemPrice){
 
 	menuItemText.appendChild(menuItemName);
 	menuItemText.appendChild(menuItemPrice);
-
+	menuItemText.classList = "menu-item-text";
 	menuItemContainer.appendChild(menuItemText);
 
 	return menuItemContainer;
@@ -296,9 +310,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const mainContainer = document.getElementById("content");
+mainContainer.style.height = "100vh";
 const menuDiv = document.createElement("div");
 menuDiv.id = "menuDiv";
-
 
 const homeBtn = document.createElement("button");
 homeBtn.textContent = "home";
@@ -327,6 +341,13 @@ contactBtn.addEventListener('click', (e) => {
 
 })
 
+rmenuBtn.addEventListener('click', (e) => {
+	clearPage();
+	mainContainer.appendChild(menuDiv);
+	(0,_menu_js__WEBPACK_IMPORTED_MODULE_2__.default)(mainContainer);
+
+})
+
 const clearPage = () =>{
 	while(mainContainer.lastChild){
 		mainContainer.removeChild(mainContainer.firstChild);
@@ -339,7 +360,7 @@ menuButtons.forEach((item,index)=>{
 })
 
 mainContainer.appendChild(menuDiv);
-(0,_menu_js__WEBPACK_IMPORTED_MODULE_2__.default)(mainContainer);
+(0,_homepg_js__WEBPACK_IMPORTED_MODULE_0__.default)(mainContainer);
 
 
 

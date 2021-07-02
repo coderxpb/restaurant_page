@@ -3,9 +3,9 @@ import contactPage from './contact.js';
 import menuPage from './menu.js';
 
 const mainContainer = document.getElementById("content");
+mainContainer.style.height = "100vh";
 const menuDiv = document.createElement("div");
 menuDiv.id = "menuDiv";
-
 
 const homeBtn = document.createElement("button");
 homeBtn.textContent = "home";
@@ -34,6 +34,13 @@ contactBtn.addEventListener('click', (e) => {
 
 })
 
+rmenuBtn.addEventListener('click', (e) => {
+	clearPage();
+	mainContainer.appendChild(menuDiv);
+	menuPage(mainContainer);
+
+})
+
 const clearPage = () =>{
 	while(mainContainer.lastChild){
 		mainContainer.removeChild(mainContainer.firstChild);
@@ -46,7 +53,7 @@ menuButtons.forEach((item,index)=>{
 })
 
 mainContainer.appendChild(menuDiv);
-menuPage(mainContainer);
+homePage(mainContainer);
 
 
 

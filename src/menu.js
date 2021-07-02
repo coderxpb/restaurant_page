@@ -2,7 +2,7 @@ import menuBg from './imgs/menu-bg2.jpg'
 import pizza from './imgs/pizza.jpg'
 
 const menuPage = (mainContainer) =>{
-	mainContainer.style.height = "100vh";
+	
 	const bgImg = document.createElement("img");
 	bgImg.classList = "menubg"
 	bgImg.id = "menu-img";

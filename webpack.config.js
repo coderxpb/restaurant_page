@@ -1,5 +1,6 @@
 const path = require('path')
 const mode =  process.env.NODE_ENV === 'production'?'production':'development'
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
 	mode: mode,
@@ -21,6 +22,16 @@ module.exports = {
 			},
 		],
 	},
+	plugins: [
+		new ImageMinimizerPlugin({
+			minimizerOptions: {
+				plugins: [
+					["mozjpeg", { progressive: true, quality: 70 }],
+				],
+			}
+			
+		})
+	],
 
 	devtool: 'source-map',
 	devServer:{
