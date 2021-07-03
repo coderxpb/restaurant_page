@@ -5,22 +5,16 @@ const menuPage = (mainContainer) =>{
 	
 	let mainMenuContainer = document.createElement("div");
 	let spacer = document.createElement("div");
-	spacer.style = "height: 100px;"
+	spacer.style = "height: 120px;"
 	const pizzaItem = createMenuItem("norev", pizza, "Pizza", "$9");
 	const pizzaItemRev = createMenuItem("rev", pizza, "Pizza2", "$92");
 	const pizzaItem2 = createMenuItem("norev", pizza, "Pizza", "$9");
 	const pizzaItemRev2 = createMenuItem("rev", pizza, "Pizza2", "$92");
-	const pizzaItem3 = createMenuItem("norev", pizza, "Pizza", "$9");
-	const pizzaItemRev3 = createMenuItem("rev", pizza, "Pizza2", "$92");
-	mainMenuContainer.id = "main-menu";
-	mainMenuContainer.appendChild(spacer);
-	mainMenuContainer.appendChild(pizzaItem);
-	mainMenuContainer.appendChild(pizzaItemRev);
-	mainMenuContainer.appendChild(pizzaItem2);
-	mainMenuContainer.appendChild(pizzaItemRev2);
-	mainMenuContainer.appendChild(pizzaItem3);
-	mainMenuContainer.appendChild(pizzaItemRev3);
 
+	mainMenuContainer.id = "main-menu";
+
+	mainMenuContainer.appendChild(spacer);
+	mainMenuContainer.append(pizzaItem, pizzaItemRev, pizzaItem2, pizzaItemRev2);
 	mainContainer.appendChild(mainMenuContainer);
 
 }
@@ -39,8 +33,7 @@ function createMenuItem(reversed, itemImg, itemName, itemPrice){
 	let menuItemPrice = document.createElement("p");
 	menuItemPrice.textContent = itemPrice;
 
-	menuItemText.appendChild(menuItemName);
-	menuItemText.appendChild(menuItemPrice);
+	menuItemText.append(menuItemName,menuItemPrice);
 	menuItemText.classList = "menu-item-text";
 	menuItemContainer.appendChild(menuItemText);
 

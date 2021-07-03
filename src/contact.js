@@ -10,9 +10,9 @@ const contactPage = (mainContainer) => {
 	subjF.setAttribute("type","text");
 	subjF.classList = "con-field";
 
-	const mesF = document.createElement("input")
-	mesF.style = "height: 55%; "
-	mesF.setAttribute("type", "text");
+	const mesF = document.createElement("textarea")
+	mesF.style = "height: 30%; "
+	//mesF.setAttribute("type", "textarea");
 	mesF.classList = "con-field";
 
 	const subBtn = document.createElement("button")

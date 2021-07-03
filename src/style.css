@@ -31,7 +31,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 #menu-div{
 	box-sizing: border-box;
 	position: absolute;
-	top:5px; right: 5px; 
+	top:5px; 
+	right: 5px; 
 	display: flex;
 	gap: 10px;
 	z-index: 2;
@@ -70,7 +71,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 }
 
 @media screen and (max-width: 400px) {
-	#menuDiv{
+	#menu-div{
 		flex-direction: column;
 		gap: 5px;
 	}
@@ -137,10 +138,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	box-sizing: border-box;
 	position: relative;
 	height: 30vh;
+	width: 90vw;
 	z-index: 1;
 	display: flex;
 	justify-content: space-evenly;
-	width: 90vw;
+	
 	background-color: rgba(165, 235, 235, 0.562);
 	align-self: flex-end;
 	justify-content: space-between;
@@ -158,6 +160,37 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	background-color: rgba(165, 235, 235, 0.562);
 	align-self: flex-start;
 	justify-content: space-between;
+}
+
+@media screen and (min-width:800px) {
+	.menu-itemnorev{
+		height: 45vh;
+		width: 60vw;
+	}
+
+	.menu-itemrev{
+		height: 45vh;
+		width: 60vw;
+	}
+
+	#home-text{
+		font-size: 9rem;
+	}
+}
+
+@media screen and (min-width:1200px) {
+	.menu-itemnorev{
+		height: 55vh;
+		width: 60vw;
+	}
+
+	.menu-itemrev{
+		height: 55vh;
+		width: 60vw;
+	}
+	#home-text{
+		font-size: 11rem;
+	}
 }
 
 .menu-item-img{
