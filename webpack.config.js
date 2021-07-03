@@ -1,6 +1,7 @@
 const path = require('path')
 const mode =  process.env.NODE_ENV === 'production'?'production':'development'
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+//const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 	mode: mode,
@@ -8,7 +9,8 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		filename: 'main.js',
-		path: path.resolve(__dirname,'dist')
+		path: path.resolve(__dirname,'dist'),
+		clean: true
 	},
 	module: {
 		rules: [
@@ -26,6 +28,11 @@ module.exports = {
 			}
 		],
 	},
+	plugins: [
+		new HtmlWebpackPlugin({
+			template: 'src/index.html'
+		})
+	],
 	// plugins: [
 	// 	new ImageMinimizerPlugin({
 	// 		minimizerOptions: {

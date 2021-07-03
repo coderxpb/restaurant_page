@@ -8,7 +8,7 @@ const homePage = (mainContainer) => {
 	// bgImg.src = homebg;
 
 	// mainContainer.appendChild(bgImg);
-  let linebreak = document.createElement("br");
+  
 	const hmTxt = document.createElement("div");
 	hmTxt.id = "home-text";
 
@@ -21,11 +21,9 @@ const homePage = (mainContainer) => {
 	const hmp3 = document.createElement("p");
 	hmp3.textContent = "best.";
 
-	hmTxt.appendChild(hmp1);
-	hmTxt.appendChild(hmp2);
-	hmTxt.appendChild(hmp3);
-
+	hmTxt.append(hmp1,hmp2,hmp3);
 	mainContainer.appendChild(hmTxt);
 }
+
 
 export default homePage;

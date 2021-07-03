@@ -27,7 +27,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_imgs_home_bg_jpg__WEBPACK_IMPORTED_MODULE_3__);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}\n\n#main-con{\n\tbackground-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n.menu-button{\n\tbox-sizing: border-box;\n\tborder: none;\n\tbackground-color: transparent;\n\ttext-decoration: underline;\n\tfont-size: 2.4rem;\n\tfont-weight: 500;\n\ttext-shadow: 0 -1px 4px black;\n\tcolor:rgb(255, 255, 255);\n\talign-self: flex-end;\n\tz-index: 1;\n}\n\n.menu-button:hover{\n\tcolor:rgb(240, 240, 240);\n\tcursor: pointer ;\n\tz-index: 1;\n}\n\n#menuDiv{\n\tposition: absolute;\n\ttop:5px; right: 5px; display: flex;gap: 10px;\n\tz-index: 1;\n}\n\n.bgimgs{\n\tbox-sizing: border-box;\n\tposition: absolute;\n\theight: 100vh;\n\twidth: 100vw;\n\tobject-fit: cover;\n}\n\n.menubg{\n\tbox-sizing: border-box;\n\tposition: absolute;\n\theight: 220vh;\n\twidth: 100%;\n\tobject-fit: cover;\n}\n\n#home-text{\n\tposition: relative;\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\tpadding-top: 30px;\n\tpadding-left: 30px;\n\tgap: 10px;\n\theight: 100vh;\n\tcolor: rgb(225, 252, 249);\n\ttext-shadow: 2px 2px 2px rgb(138, 138, 138);\n\tfont-size: 7rem;\n\tbox-sizing: border-box;\n\n}\n\n@media screen and (max-width: 400px) {\n\t#menuDiv{\n\t\tflex-direction: column;\n\t\tgap: 5px;\n\t}\n\t.menu-button{\n\t\tfont-size: 2rem;\n\t\tcolor:rgb(245, 245, 245);\n\t}\n\t\n}\n\n#con-form{\n\tbox-sizing: border-box;\n\tposition: relative; \n\tdisplay:flex; \n\tflex-direction: column; \n\theight: 100vh;\n\tjustify-content: center;\n\tgap: 20px;\n}\n\n.con-field{\n\twidth: 600px;\n\talign-self: center;\n}\n\n.con-btn{\n\t\talign-self: center;\n\t\theight: 4%;\n\t\twidth: 200px;\n\t}\n\n@media screen and (max-width: 620px) {\n\t#con-form{\n\t\tbox-sizing: border-box;\n\t\tposition: relative; \n\t\tdisplay:flex; \n\t\tflex-direction: column; \n\t\theight: 100vh;\n\t\tjustify-content: center;\n\t\tgap: 10px;\n\t}\n\n.con-field{\n\t\twidth: 90%;\n\t\talign-self: center;\n\t}\n\n\t.con-btn{\n\t\twidth: 160px;\n\t}\n\t\n}\n\n#main-menu{\n\tbox-sizing: border-box;\n\tposition: relative;\n\ttop: 140px;\n\tz-index: 1;\n\tdisplay: flex;\n\tflex-direction: column;\n\tgap: 24px;\n}\n\n.menu-itemnorev{\n\tbox-sizing: border-box;\n\tposition: relative;\n\theight: 30vh;\n\tz-index: 1;\n\tdisplay: flex;\n\tjustify-content: space-evenly;\n\twidth: 90vw;\n\tbackground-color: rgba(165, 235, 235, 0.562);\n\talign-self: flex-end;\n\tjustify-content: space-between;\n}\n\n.menu-itemrev{\n\tbox-sizing: border-box;\n\tposition: relative;\n\tz-index: 1;\n\theight: 30vh;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n\tjustify-content: space-evenly;\n\twidth: 90vw;\n\tbackground-color: rgba(165, 235, 235, 0.562);\n\talign-self: flex-start;\n\tjustify-content: space-between;\n}\n\n.menu-item-img{\n\tbox-sizing: border-box;\n\twidth: 70%;\n\tobject-fit: cover;\n}\n\n.menu-item-text{\n\tbox-sizing: border-box;\n\tfont-size: 2rem;\n\talign-self: flex-end;\n\tdisplay: flex;\n\tflex-direction: column;\n\ttext-align: end;\n\tpadding-left: 10px;\n\tpadding-right: 10px;\n}\n\n.menu-item-text:first-child{\n\tbox-sizing: border-box;\n\tfont-size: 5rem;\n}\n\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA,2ZAA2Z,QAAQ,CAAC,cAAc,CAAC,YAAY,CAAC,uBAAuB,CAAC,QAAQ,CAAC,SAAS,CAAC,8EAA8E,aAAa,CAAC,KAAK,aAAa,CAAC,MAAM,eAAe,CAAC,aAAa,WAAW,CAAC,oDAAoD,YAAY,CAAC,MAAM,wBAAwB,CAAC,gBAAgB;;AAEzvB;CACC,yDAAyC;AAC1C;AACA;CACC,sBAAsB;CACtB,YAAY;CACZ,6BAA6B;CAC7B,0BAA0B;CAC1B,iBAAiB;CACjB,gBAAgB;CAChB,6BAA6B;CAC7B,wBAAwB;CACxB,oBAAoB;CACpB,UAAU;AACX;;AAEA;CACC,wBAAwB;CACxB,gBAAgB;CAChB,UAAU;AACX;;AAEA;CACC,kBAAkB;CAClB,OAAO,EAAE,UAAU,EAAE,aAAa,CAAC,SAAS;CAC5C,UAAU;AACX;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,aAAa;CACb,YAAY;CACZ,iBAAiB;AAClB;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,aAAa;CACb,WAAW;CACX,iBAAiB;AAClB;;AAEA;CACC,kBAAkB;CAClB,aAAa;CACb,sBAAsB;CACtB,uBAAuB;CACvB,iBAAiB;CACjB,kBAAkB;CAClB,SAAS;CACT,aAAa;CACb,yBAAyB;CACzB,2CAA2C;CAC3C,eAAe;CACf,sBAAsB;;AAEvB;;AAEA;CACC;EACC,sBAAsB;EACtB,QAAQ;CACT;CACA;EACC,eAAe;EACf,wBAAwB;CACzB;;AAED;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,YAAY;CACZ,sBAAsB;CACtB,aAAa;CACb,uBAAuB;CACvB,SAAS;AACV;;AAEA;CACC,YAAY;CACZ,kBAAkB;AACnB;;AAEA;EACE,kBAAkB;EAClB,UAAU;EACV,YAAY;CACb;;AAED;CACC;EACC,sBAAsB;EACtB,kBAAkB;EAClB,YAAY;EACZ,sBAAsB;EACtB,aAAa;EACb,uBAAuB;EACvB,SAAS;CACV;;AAED;EACE,UAAU;EACV,kBAAkB;CACnB;;CAEA;EACC,YAAY;CACb;;AAED;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,UAAU;CACV,UAAU;CACV,aAAa;CACb,sBAAsB;CACtB,SAAS;AACV;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,YAAY;CACZ,UAAU;CACV,aAAa;CACb,6BAA6B;CAC7B,WAAW;CACX,4CAA4C;CAC5C,oBAAoB;CACpB,8BAA8B;AAC/B;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,UAAU;CACV,YAAY;CACZ,aAAa;CACb,2BAA2B;CAC3B,6BAA6B;CAC7B,WAAW;CACX,4CAA4C;CAC5C,sBAAsB;CACtB,8BAA8B;AAC/B;;AAEA;CACC,sBAAsB;CACtB,UAAU;CACV,iBAAiB;AAClB;;AAEA;CACC,sBAAsB;CACtB,eAAe;CACf,oBAAoB;CACpB,aAAa;CACb,sBAAsB;CACtB,eAAe;CACf,kBAAkB;CAClB,mBAAmB;AACpB;;AAEA;CACC,sBAAsB;CACtB,eAAe;AAChB","sourcesContent":["html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}\n\n#main-con{\n\tbackground-image: url('imgs/home-bg.jpg');\n}\n.menu-button{\n\tbox-sizing: border-box;\n\tborder: none;\n\tbackground-color: transparent;\n\ttext-decoration: underline;\n\tfont-size: 2.4rem;\n\tfont-weight: 500;\n\ttext-shadow: 0 -1px 4px black;\n\tcolor:rgb(255, 255, 255);\n\talign-self: flex-end;\n\tz-index: 1;\n}\n\n.menu-button:hover{\n\tcolor:rgb(240, 240, 240);\n\tcursor: pointer ;\n\tz-index: 1;\n}\n\n#menuDiv{\n\tposition: absolute;\n\ttop:5px; right: 5px; display: flex;gap: 10px;\n\tz-index: 1;\n}\n\n.bgimgs{\n\tbox-sizing: border-box;\n\tposition: absolute;\n\theight: 100vh;\n\twidth: 100vw;\n\tobject-fit: cover;\n}\n\n.menubg{\n\tbox-sizing: border-box;\n\tposition: absolute;\n\theight: 220vh;\n\twidth: 100%;\n\tobject-fit: cover;\n}\n\n#home-text{\n\tposition: relative;\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\tpadding-top: 30px;\n\tpadding-left: 30px;\n\tgap: 10px;\n\theight: 100vh;\n\tcolor: rgb(225, 252, 249);\n\ttext-shadow: 2px 2px 2px rgb(138, 138, 138);\n\tfont-size: 7rem;\n\tbox-sizing: border-box;\n\n}\n\n@media screen and (max-width: 400px) {\n\t#menuDiv{\n\t\tflex-direction: column;\n\t\tgap: 5px;\n\t}\n\t.menu-button{\n\t\tfont-size: 2rem;\n\t\tcolor:rgb(245, 245, 245);\n\t}\n\t\n}\n\n#con-form{\n\tbox-sizing: border-box;\n\tposition: relative; \n\tdisplay:flex; \n\tflex-direction: column; \n\theight: 100vh;\n\tjustify-content: center;\n\tgap: 20px;\n}\n\n.con-field{\n\twidth: 600px;\n\talign-self: center;\n}\n\n.con-btn{\n\t\talign-self: center;\n\t\theight: 4%;\n\t\twidth: 200px;\n\t}\n\n@media screen and (max-width: 620px) {\n\t#con-form{\n\t\tbox-sizing: border-box;\n\t\tposition: relative; \n\t\tdisplay:flex; \n\t\tflex-direction: column; \n\t\theight: 100vh;\n\t\tjustify-content: center;\n\t\tgap: 10px;\n\t}\n\n.con-field{\n\t\twidth: 90%;\n\t\talign-self: center;\n\t}\n\n\t.con-btn{\n\t\twidth: 160px;\n\t}\n\t\n}\n\n#main-menu{\n\tbox-sizing: border-box;\n\tposition: relative;\n\ttop: 140px;\n\tz-index: 1;\n\tdisplay: flex;\n\tflex-direction: column;\n\tgap: 24px;\n}\n\n.menu-itemnorev{\n\tbox-sizing: border-box;\n\tposition: relative;\n\theight: 30vh;\n\tz-index: 1;\n\tdisplay: flex;\n\tjustify-content: space-evenly;\n\twidth: 90vw;\n\tbackground-color: rgba(165, 235, 235, 0.562);\n\talign-self: flex-end;\n\tjustify-content: space-between;\n}\n\n.menu-itemrev{\n\tbox-sizing: border-box;\n\tposition: relative;\n\tz-index: 1;\n\theight: 30vh;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n\tjustify-content: space-evenly;\n\twidth: 90vw;\n\tbackground-color: rgba(165, 235, 235, 0.562);\n\talign-self: flex-start;\n\tjustify-content: space-between;\n}\n\n.menu-item-img{\n\tbox-sizing: border-box;\n\twidth: 70%;\n\tobject-fit: cover;\n}\n\n.menu-item-text{\n\tbox-sizing: border-box;\n\tfont-size: 2rem;\n\talign-self: flex-end;\n\tdisplay: flex;\n\tflex-direction: column;\n\ttext-align: end;\n\tpadding-left: 10px;\n\tpadding-right: 10px;\n}\n\n.menu-item-text:first-child{\n\tbox-sizing: border-box;\n\tfont-size: 5rem;\n}\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}\n\n#main-con{\n\tbackground-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  background-position: center;\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  \n  background-size: cover;\n}\n\n.menu-button{\n\tbox-sizing: border-box;\n\tborder: none;\n\tbackground-color: transparent;\n\ttext-decoration: underline;\n\tfont-size: 2.4rem;\n\tfont-weight: 500;\n\ttext-shadow: 0 -1px 4px black;\n\tcolor:rgb(255, 255, 255);\n\talign-self: flex-end;\n\tz-index: 1;\n}\n\n.menu-button:hover{\n\tcolor:rgb(240, 240, 240);\n\tcursor: pointer ;\n\tz-index: 1;\n}\n\n#menu-div{\n\tbox-sizing: border-box;\n\tposition: absolute;\n\ttop:5px; right: 5px; \n\tdisplay: flex;\n\tgap: 10px;\n\tz-index: 2;\n}\n\n.bgimgs{\n\tbox-sizing: border-box;\n\tposition: absolute;\n\theight: 100vh;\n\twidth: 100vw;\n\tobject-fit: cover;\n}\n\n.menubg{\n\tbox-sizing: border-box;\n\tposition: absolute;\n\theight: 220vh;\n\twidth: 100%;\n\tobject-fit: cover;\n}\n\n#home-text{\n\tposition: relative;\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\tpadding-top: 30px;\n\tpadding-left: 30px;\n\tgap: 10px;\n\theight: 100vh;\n\tcolor: rgb(225, 252, 249);\n\ttext-shadow: 2px 2px 2px rgb(138, 138, 138);\n\tfont-size: 7rem;\n\tbox-sizing: border-box;\n\n}\n\n@media screen and (max-width: 400px) {\n\t#menuDiv{\n\t\tflex-direction: column;\n\t\tgap: 5px;\n\t}\n\t.menu-button{\n\t\tfont-size: 2rem;\n\t\tcolor:rgb(245, 245, 245);\n\t}\n\t\n}\n\n#con-form{\n\tbox-sizing: border-box;\n\tposition: relative; \n\tdisplay:flex; \n\tflex-direction: column; \n\theight: 100vh;\n\tjustify-content: center;\n\tgap: 20px;\n}\n\n.con-field{\n\twidth: 600px;\n\talign-self: center;\n}\n\n.con-btn{\n\t\talign-self: center;\n\t\theight: 4%;\n\t\twidth: 200px;\n\t}\n\n@media screen and (max-width: 620px) {\n\t#con-form{\n\t\tbox-sizing: border-box;\n\t\tposition: relative; \n\t\tdisplay:flex; \n\t\tflex-direction: column; \n\t\theight: 100vh;\n\t\tjustify-content: center;\n\t\tgap: 10px;\n\t}\n\n.con-field{\n\t\twidth: 90%;\n\t\talign-self: center;\n\t}\n\n\t.con-btn{\n\t\twidth: 160px;\n\t}\n\t\n}\n\n#main-menu{\n\tbox-sizing: border-box;\n\tposition: relative;\n\tz-index: 1;\n\tdisplay: flex;\n\tflex-direction: column;\n\tgap: 24px;\n}\n\n.menu-itemnorev{\n\tbox-sizing: border-box;\n\tposition: relative;\n\theight: 30vh;\n\tz-index: 1;\n\tdisplay: flex;\n\tjustify-content: space-evenly;\n\twidth: 90vw;\n\tbackground-color: rgba(165, 235, 235, 0.562);\n\talign-self: flex-end;\n\tjustify-content: space-between;\n}\n\n.menu-itemrev{\n\tbox-sizing: border-box;\n\tposition: relative;\n\tz-index: 1;\n\theight: 30vh;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n\tjustify-content: space-evenly;\n\twidth: 90vw;\n\tbackground-color: rgba(165, 235, 235, 0.562);\n\talign-self: flex-start;\n\tjustify-content: space-between;\n}\n\n.menu-item-img{\n\tbox-sizing: border-box;\n\twidth: 70%;\n\tobject-fit: cover;\n}\n\n.menu-item-text{\n\tbox-sizing: border-box;\n\tfont-size: 2rem;\n\talign-self: flex-end;\n\tdisplay: flex;\n\tflex-direction: column;\n\ttext-align: end;\n\tpadding-left: 10px;\n\tpadding-right: 10px;\n}\n\n.menu-item-text:first-child{\n\tbox-sizing: border-box;\n\tfont-size: 5rem;\n}\n\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA,2ZAA2Z,QAAQ,CAAC,cAAc,CAAC,YAAY,CAAC,uBAAuB,CAAC,QAAQ,CAAC,SAAS,CAAC,8EAA8E,aAAa,CAAC,KAAK,aAAa,CAAC,MAAM,eAAe,CAAC,aAAa,WAAW,CAAC,oDAAoD,YAAY,CAAC,MAAM,wBAAwB,CAAC,gBAAgB;;AAEzvB;CACC,yDAAyC;EACxC,2BAA2B;EAC3B,4BAA4B;EAC5B,4BAA4B;;EAE5B,sBAAsB;AACxB;;AAEA;CACC,sBAAsB;CACtB,YAAY;CACZ,6BAA6B;CAC7B,0BAA0B;CAC1B,iBAAiB;CACjB,gBAAgB;CAChB,6BAA6B;CAC7B,wBAAwB;CACxB,oBAAoB;CACpB,UAAU;AACX;;AAEA;CACC,wBAAwB;CACxB,gBAAgB;CAChB,UAAU;AACX;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,OAAO,EAAE,UAAU;CACnB,aAAa;CACb,SAAS;CACT,UAAU;AACX;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,aAAa;CACb,YAAY;CACZ,iBAAiB;AAClB;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,aAAa;CACb,WAAW;CACX,iBAAiB;AAClB;;AAEA;CACC,kBAAkB;CAClB,aAAa;CACb,sBAAsB;CACtB,uBAAuB;CACvB,iBAAiB;CACjB,kBAAkB;CAClB,SAAS;CACT,aAAa;CACb,yBAAyB;CACzB,2CAA2C;CAC3C,eAAe;CACf,sBAAsB;;AAEvB;;AAEA;CACC;EACC,sBAAsB;EACtB,QAAQ;CACT;CACA;EACC,eAAe;EACf,wBAAwB;CACzB;;AAED;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,YAAY;CACZ,sBAAsB;CACtB,aAAa;CACb,uBAAuB;CACvB,SAAS;AACV;;AAEA;CACC,YAAY;CACZ,kBAAkB;AACnB;;AAEA;EACE,kBAAkB;EAClB,UAAU;EACV,YAAY;CACb;;AAED;CACC;EACC,sBAAsB;EACtB,kBAAkB;EAClB,YAAY;EACZ,sBAAsB;EACtB,aAAa;EACb,uBAAuB;EACvB,SAAS;CACV;;AAED;EACE,UAAU;EACV,kBAAkB;CACnB;;CAEA;EACC,YAAY;CACb;;AAED;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,UAAU;CACV,aAAa;CACb,sBAAsB;CACtB,SAAS;AACV;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,YAAY;CACZ,UAAU;CACV,aAAa;CACb,6BAA6B;CAC7B,WAAW;CACX,4CAA4C;CAC5C,oBAAoB;CACpB,8BAA8B;AAC/B;;AAEA;CACC,sBAAsB;CACtB,kBAAkB;CAClB,UAAU;CACV,YAAY;CACZ,aAAa;CACb,2BAA2B;CAC3B,6BAA6B;CAC7B,WAAW;CACX,4CAA4C;CAC5C,sBAAsB;CACtB,8BAA8B;AAC/B;;AAEA;CACC,sBAAsB;CACtB,UAAU;CACV,iBAAiB;AAClB;;AAEA;CACC,sBAAsB;CACtB,eAAe;CACf,oBAAoB;CACpB,aAAa;CACb,sBAAsB;CACtB,eAAe;CACf,kBAAkB;CAClB,mBAAmB;AACpB;;AAEA;CACC,sBAAsB;CACtB,eAAe;AAChB","sourcesContent":["html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}\n\n#main-con{\n\tbackground-image: url('imgs/home-bg.jpg');\n  background-position: center;\n  background-repeat: no-repeat;\n  background-attachment: fixed;\n  \n  background-size: cover;\n}\n\n.menu-button{\n\tbox-sizing: border-box;\n\tborder: none;\n\tbackground-color: transparent;\n\ttext-decoration: underline;\n\tfont-size: 2.4rem;\n\tfont-weight: 500;\n\ttext-shadow: 0 -1px 4px black;\n\tcolor:rgb(255, 255, 255);\n\talign-self: flex-end;\n\tz-index: 1;\n}\n\n.menu-button:hover{\n\tcolor:rgb(240, 240, 240);\n\tcursor: pointer ;\n\tz-index: 1;\n}\n\n#menu-div{\n\tbox-sizing: border-box;\n\tposition: absolute;\n\ttop:5px; right: 5px; \n\tdisplay: flex;\n\tgap: 10px;\n\tz-index: 2;\n}\n\n.bgimgs{\n\tbox-sizing: border-box;\n\tposition: absolute;\n\theight: 100vh;\n\twidth: 100vw;\n\tobject-fit: cover;\n}\n\n.menubg{\n\tbox-sizing: border-box;\n\tposition: absolute;\n\theight: 220vh;\n\twidth: 100%;\n\tobject-fit: cover;\n}\n\n#home-text{\n\tposition: relative;\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\tpadding-top: 30px;\n\tpadding-left: 30px;\n\tgap: 10px;\n\theight: 100vh;\n\tcolor: rgb(225, 252, 249);\n\ttext-shadow: 2px 2px 2px rgb(138, 138, 138);\n\tfont-size: 7rem;\n\tbox-sizing: border-box;\n\n}\n\n@media screen and (max-width: 400px) {\n\t#menuDiv{\n\t\tflex-direction: column;\n\t\tgap: 5px;\n\t}\n\t.menu-button{\n\t\tfont-size: 2rem;\n\t\tcolor:rgb(245, 245, 245);\n\t}\n\t\n}\n\n#con-form{\n\tbox-sizing: border-box;\n\tposition: relative; \n\tdisplay:flex; \n\tflex-direction: column; \n\theight: 100vh;\n\tjustify-content: center;\n\tgap: 20px;\n}\n\n.con-field{\n\twidth: 600px;\n\talign-self: center;\n}\n\n.con-btn{\n\t\talign-self: center;\n\t\theight: 4%;\n\t\twidth: 200px;\n\t}\n\n@media screen and (max-width: 620px) {\n\t#con-form{\n\t\tbox-sizing: border-box;\n\t\tposition: relative; \n\t\tdisplay:flex; \n\t\tflex-direction: column; \n\t\theight: 100vh;\n\t\tjustify-content: center;\n\t\tgap: 10px;\n\t}\n\n.con-field{\n\t\twidth: 90%;\n\t\talign-self: center;\n\t}\n\n\t.con-btn{\n\t\twidth: 160px;\n\t}\n\t\n}\n\n#main-menu{\n\tbox-sizing: border-box;\n\tposition: relative;\n\tz-index: 1;\n\tdisplay: flex;\n\tflex-direction: column;\n\tgap: 24px;\n}\n\n.menu-itemnorev{\n\tbox-sizing: border-box;\n\tposition: relative;\n\theight: 30vh;\n\tz-index: 1;\n\tdisplay: flex;\n\tjustify-content: space-evenly;\n\twidth: 90vw;\n\tbackground-color: rgba(165, 235, 235, 0.562);\n\talign-self: flex-end;\n\tjustify-content: space-between;\n}\n\n.menu-itemrev{\n\tbox-sizing: border-box;\n\tposition: relative;\n\tz-index: 1;\n\theight: 30vh;\n\tdisplay: flex;\n\tflex-direction: row-reverse;\n\tjustify-content: space-evenly;\n\twidth: 90vw;\n\tbackground-color: rgba(165, 235, 235, 0.562);\n\talign-self: flex-start;\n\tjustify-content: space-between;\n}\n\n.menu-item-img{\n\tbox-sizing: border-box;\n\twidth: 70%;\n\tobject-fit: cover;\n}\n\n.menu-item-text{\n\tbox-sizing: border-box;\n\tfont-size: 2rem;\n\talign-self: flex-end;\n\tdisplay: flex;\n\tflex-direction: column;\n\ttext-align: end;\n\tpadding-left: 10px;\n\tpadding-right: 10px;\n}\n\n.menu-item-text:first-child{\n\tbox-sizing: border-box;\n\tfont-size: 5rem;\n}\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -495,19 +495,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _imgs_contact_bg_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./imgs/contact-bg.jpg */ "./src/imgs/contact-bg.jpg");
 
 
 const contactPage = (mainContainer) => {
 	
-
-	const bgImg = document.createElement("img");
-	bgImg.classList = "bgimgs";
-	bgImg.id = "contact-img";
-	bgImg.src = _imgs_contact_bg_jpg__WEBPACK_IMPORTED_MODULE_0__;
-
-	mainContainer.appendChild(bgImg);
-
 	const formC = document.createElement("form");
 	formC.id = "con-form";
 	
@@ -557,7 +548,7 @@ const homePage = (mainContainer) => {
 	// bgImg.src = homebg;
 
 	// mainContainer.appendChild(bgImg);
-  let linebreak = document.createElement("br");
+  
 	const hmTxt = document.createElement("div");
 	hmTxt.id = "home-text";
 
@@ -570,24 +561,12 @@ const homePage = (mainContainer) => {
 	const hmp3 = document.createElement("p");
 	hmp3.textContent = "best.";
 
-	hmTxt.appendChild(hmp1);
-	hmTxt.appendChild(hmp2);
-	hmTxt.appendChild(hmp3);
-
+	hmTxt.append(hmp1,hmp2,hmp3);
 	mainContainer.appendChild(hmTxt);
 }
 
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homePage);
-
-/***/ }),
-
-/***/ "./src/imgs/contact-bg.jpg":
-/*!*********************************!*\
-  !*** ./src/imgs/contact-bg.jpg ***!
-  \*********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "images/726ced0a84ccb5804bf8.jpg";
 
 /***/ }),
 
@@ -638,14 +617,9 @@ __webpack_require__.r(__webpack_exports__);
 
 const menuPage = (mainContainer) =>{
 	
-	const bgImg = document.createElement("img");
-	bgImg.classList = "menubg"
-	bgImg.id = "menu-img";
-	bgImg.src = _imgs_menu_bg2_jpg__WEBPACK_IMPORTED_MODULE_0__;
-
-	mainContainer.appendChild(bgImg);
-
 	let mainMenuContainer = document.createElement("div");
+	let spacer = document.createElement("div");
+	spacer.style = "height: 100px;"
 	const pizzaItem = createMenuItem("norev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza", "$9");
 	const pizzaItemRev = createMenuItem("rev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza2", "$92");
 	const pizzaItem2 = createMenuItem("norev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza", "$9");
@@ -653,6 +627,7 @@ const menuPage = (mainContainer) =>{
 	const pizzaItem3 = createMenuItem("norev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza", "$9");
 	const pizzaItemRev3 = createMenuItem("rev", _imgs_pizza_jpg__WEBPACK_IMPORTED_MODULE_1__, "Pizza2", "$92");
 	mainMenuContainer.id = "main-menu";
+	mainMenuContainer.appendChild(spacer);
 	mainMenuContainer.appendChild(pizzaItem);
 	mainMenuContainer.appendChild(pizzaItemRev);
 	mainMenuContainer.appendChild(pizzaItem2);
@@ -806,11 +781,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const mainContainer = document.getElementById("content");
-mainContainer.style.height = "100vh";
-mainContainer.id = "main-con";
+const mainContainer = document.getElementById("main-con");
+
 const menuDiv = document.createElement("div");
-menuDiv.id = "menuDiv";
+menuDiv.id = "menu-div";
 
 const homeBtn = document.createElement("button");
 homeBtn.textContent = "home";
@@ -829,7 +803,7 @@ function createClickButton(btnText,){
 
 homeBtn.addEventListener('click', (e)=>{
 	clearPage();
-	mainContainer.appendChild(menuDiv);
+	//mainContainer.appendChild(menuDiv);
 	(0,_homepg_js__WEBPACK_IMPORTED_MODULE_0__.default)(mainContainer);
 
 })
@@ -837,21 +811,24 @@ homeBtn.addEventListener('click', (e)=>{
 
 contactBtn.addEventListener('click', (e) => {
 	clearPage();
-	mainContainer.appendChild(menuDiv);
+	//mainContainer.appendChild(menuDiv);
 	(0,_contact_js__WEBPACK_IMPORTED_MODULE_1__.default)(mainContainer);
 
 })
 
 rmenuBtn.addEventListener('click', (e) => {
 	clearPage();
-	mainContainer.appendChild(menuDiv);
+	//mainContainer.appendChild(menuDiv);
 	(0,_menu_js__WEBPACK_IMPORTED_MODULE_2__.default)(mainContainer);
 
 })
 
 const clearPage = () =>{
 	while(mainContainer.lastChild){
-		mainContainer.removeChild(mainContainer.firstChild);
+		if(mainContainer.lastChild.id=="menu-div"){
+			break;
+		}
+		mainContainer.removeChild(mainContainer.lastChild);
 	}
 }
 
@@ -859,6 +836,18 @@ menuButtons.forEach((item,index)=>{
 	menuDiv.appendChild(item);
 	item.classList.add("menu-button");
 })
+
+const createMenuButtons = (btnTextContent, pageFunction) =>{
+	let newBtn = document.createElement("button");
+	newBtn.textContent = btnTextContent;
+	newBtn.addEventListener('click', (e)=>{
+		clearPage();
+		mainContainer.appendChild(menuDiv);
+		pageFunction(mainContainer);
+	})
+	newBtn.classList.add("menu-button");
+	menuDiv.appendChild(newBtn);
+}
 
 mainContainer.appendChild(menuDiv);
 (0,_homepg_js__WEBPACK_IMPORTED_MODULE_0__.default)(mainContainer);

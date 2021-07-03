@@ -2,8 +2,6 @@
 
 const contactPage = (mainContainer) => {
 	
-	mainContainer.style = "background-image: url('imgs/contact-bg.jpg');"
-
 	const formC = document.createElement("form");
 	formC.id = "con-form";
 	

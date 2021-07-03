@@ -3,14 +3,9 @@ import pizza from './imgs/pizza.jpg'
 
 const menuPage = (mainContainer) =>{
 	
-	const bgImg = document.createElement("img");
-	bgImg.classList = "menubg"
-	bgImg.id = "menu-img";
-	bgImg.src = menuBg;
-
-	mainContainer.appendChild(bgImg);
-
 	let mainMenuContainer = document.createElement("div");
+	let spacer = document.createElement("div");
+	spacer.style = "height: 100px;"
 	const pizzaItem = createMenuItem("norev", pizza, "Pizza", "$9");
 	const pizzaItemRev = createMenuItem("rev", pizza, "Pizza2", "$92");
 	const pizzaItem2 = createMenuItem("norev", pizza, "Pizza", "$9");
@@ -18,6 +13,7 @@ const menuPage = (mainContainer) =>{
 	const pizzaItem3 = createMenuItem("norev", pizza, "Pizza", "$9");
 	const pizzaItemRev3 = createMenuItem("rev", pizza, "Pizza2", "$92");
 	mainMenuContainer.id = "main-menu";
+	mainMenuContainer.appendChild(spacer);
 	mainMenuContainer.appendChild(pizzaItem);
 	mainMenuContainer.appendChild(pizzaItemRev);
 	mainMenuContainer.appendChild(pizzaItem2);
