@@ -31,6 +31,7 @@ const menuPage = (mainContainer) => {
   const pizzaItemRev2 = createMenuItem('rev', pizza, 'Pizza2', '$92');
 
   mainMenuContainer.id = 'main-menu';
+  mainMenuContainer.classList = 'main-menu';
 
   mainMenuContainer.appendChild(spacer);
   mainMenuContainer.append(pizzaItem, pizzaItemRev, pizzaItem2, pizzaItemRev2);

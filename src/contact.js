@@ -1,6 +1,7 @@
 const contactPage = (mainContainer) => {
   const formC = document.createElement('form');
   formC.id = 'con-form';
+  formC.classList = 'con-form';
 
   const subjF = document.createElement('input');
   subjF.style = 'height: 5%; ';

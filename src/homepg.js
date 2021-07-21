@@ -7,7 +7,7 @@ const homePage = (mainContainer) => {
   // mainContainer.appendChild(bgImg);
 
   const hmTxt = document.createElement('div');
-  hmTxt.id = 'home-text';
+  hmTxt.classList = 'home-text';
 
   const hmp1 = document.createElement('p');
   hmp1.textContent = 'only';

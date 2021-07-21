@@ -7,6 +7,7 @@ const mainContainer = document.getElementById('main-con');
 
 const menuDiv = document.createElement('div');
 menuDiv.id = 'menu-div';
+menuDiv.classList = 'menu-div';
 
 const clearPage = () => {
   while (mainContainer.lastChild) {
