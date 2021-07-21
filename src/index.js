@@ -1,41 +1,37 @@
-import homePage from './homepg.js'
-import contactPage from './contact.js';
-import menuPage from './menu.js';
+import homePage from './homepg';
+import contactPage from './contact';
+import menuPage from './menu';
 import './style.css';
 
-const mainContainer = document.getElementById("main-con");
+const mainContainer = document.getElementById('main-con');
 
-const menuDiv = document.createElement("div");
-menuDiv.id = "menu-div";
+const menuDiv = document.createElement('div');
+menuDiv.id = 'menu-div';
 
+const clearPage = () => {
+  while (mainContainer.lastChild) {
+    if (mainContainer.lastChild.id === 'menu-div') {
+      break;
+    }
+    mainContainer.removeChild(mainContainer.lastChild);
+  }
+};
 
 const createMenuButtons = (btnTextContent, pageFunction) => {
-	let newBtn = document.createElement("button");
-	newBtn.textContent = btnTextContent;
-	newBtn.addEventListener('click', (e) => {
-		clearPage();
-		pageFunction(mainContainer);
-	})
+  const newBtn = document.createElement('button');
+  newBtn.textContent = btnTextContent;
+  newBtn.addEventListener('click', () => {
+    clearPage();
+    pageFunction(mainContainer);
+  });
 
-	newBtn.classList.add("menu-button");
-	menuDiv.appendChild(newBtn);
-}
+  newBtn.classList.add('menu-button');
+  menuDiv.appendChild(newBtn);
+};
 
-createMenuButtons("home",homePage);
-createMenuButtons("menu", menuPage);
-createMenuButtons("contact", contactPage);
-
-const clearPage = () =>{
-	while(mainContainer.lastChild){
-		if(mainContainer.lastChild.id=="menu-div"){
-			break;
-		}
-		mainContainer.removeChild(mainContainer.lastChild);
-	}
-}
+createMenuButtons('home', homePage);
+createMenuButtons('menu', menuPage);
+createMenuButtons('contact', contactPage);
 
 mainContainer.appendChild(menuDiv);
 homePage(mainContainer);
-
-
-
