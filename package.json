@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/coderxpb/restaurant_page#readme",
   "dependencies": {
+    "date-fns": "^2.23.0",
     "imagemin-mozjpeg": "^9.0.0",
     "normalize.css": "^8.0.1"
   },
