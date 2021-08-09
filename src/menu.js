@@ -1,8 +1,11 @@
 import pizza from './imgs/pizza.jpg';
+import wings from './imgs/wings.jpg';
+import burger from './imgs/burger.jpg';
+import coldc from './imgs/coldc.jpg';
 
 function createMenuItem(reversed, itemImg, itemName, itemPrice) {
   const menuItemContainer = document.createElement('div');
-  menuItemContainer.classList = `menu-item${reversed}`;
+  menuItemContainer.classList = `menu-item${reversed} ,menu-item-gen`;
   const menuItemImg = document.createElement('img');
   menuItemImg.src = itemImg;
   menuItemImg.classList = 'menu-item-img';
@@ -25,10 +28,10 @@ const menuPage = (mainContainer) => {
   const mainMenuContainer = document.createElement('div');
   const spacer = document.createElement('div');
   spacer.style = 'height: 120px;';
-  const pizzaItem = createMenuItem('norev', pizza, 'pizza', '$9');
-  const pizzaItemRev = createMenuItem('rev', pizza, 'pizza1', '$92');
-  const pizzaItem2 = createMenuItem('norev', pizza, 'pizza2', '$9');
-  const pizzaItemRev2 = createMenuItem('rev', pizza, 'pizza3', '$92');
+  const pizzaItem = createMenuItem('norev', pizza, 'pizza', '$12');
+  const pizzaItemRev = createMenuItem('rev', wings, 'wings', '$15');
+  const pizzaItem2 = createMenuItem('norev', burger, 'burger', '$12');
+  const pizzaItemRev2 = createMenuItem('rev', coldc, 'cofee', '$7.5');
 
   mainMenuContainer.id = 'main-menu';
   mainMenuContainer.classList = 'main-menu';

@@ -6,15 +6,17 @@ const contactPage = (mainContainer) => {
   const subjF = document.createElement('input');
   subjF.style = 'height: 5%; ';
   subjF.setAttribute('type', 'text');
-  subjF.classList = 'con-field';
+  subjF.setAttribute('placeholder', 'subject');
+  subjF.classList = 'con-field con-subj';
 
   const mesF = document.createElement('textarea');
   mesF.style = 'height: 30%; ';
+  mesF.setAttribute('placeholder', 'type your message here');
   // mesF.setAttribute("type", "textarea");
-  mesF.classList = 'con-field';
+  mesF.classList = 'con-field con-textarea';
 
   const subBtn = document.createElement('button');
-
+  subBtn.textContent = 'send';
   subBtn.classList = 'con-btn';
 
   formC.appendChild(subjF);
