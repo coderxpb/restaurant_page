@@ -25,10 +25,10 @@ const menuPage = (mainContainer) => {
   const mainMenuContainer = document.createElement('div');
   const spacer = document.createElement('div');
   spacer.style = 'height: 120px;';
-  const pizzaItem = createMenuItem('norev', pizza, 'Pizza', '$9');
-  const pizzaItemRev = createMenuItem('rev', pizza, 'Pizza2', '$92');
-  const pizzaItem2 = createMenuItem('norev', pizza, 'Pizza', '$9');
-  const pizzaItemRev2 = createMenuItem('rev', pizza, 'Pizza2', '$92');
+  const pizzaItem = createMenuItem('norev', pizza, 'pizza', '$9');
+  const pizzaItemRev = createMenuItem('rev', pizza, 'pizza1', '$92');
+  const pizzaItem2 = createMenuItem('norev', pizza, 'pizza2', '$9');
+  const pizzaItemRev2 = createMenuItem('rev', pizza, 'pizza3', '$92');
 
   mainMenuContainer.id = 'main-menu';
   mainMenuContainer.classList = 'main-menu';
